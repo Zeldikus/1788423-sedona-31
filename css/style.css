@@ -1,0 +1,141 @@
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-midle-blue: #81B3D2;
+  --basic-extra-dark: #333333;
+  --basic-blue: #23A9E1;
+  --basic-extra-blue: #81b3d3;
+  --basic-red: #491213;
+  --basic-brown: #766357;
+  --basic-dark-brow: #766458;
+  --basic-orange: #DC6243;
+  --basic-grey: #EEEEEE;
+  --basic-ultra-grey: #F2F2F2;
+  --basic-lite-orange: #F49774;
+  --basic-pink: #F4B1A4;
+}
+
+/* cyrillic-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0-ExdGM.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0aExdGM.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+body {
+  min-width: 1280px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-extra-dark);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-header {
+  list-style: none;
+}
+
+.info,
+.photo,
+.map,
+.hotel {
+  color: var(--basic-black);
+}
+
+.info:focus,
+.photo:focus,
+.map:focus,
+.hotel:focus {
+  color: var(--basic-midle-blue);
+}
+
+.info:hover,
+.photo:hover,
+.map:hover,
+.hotel:hover {
+  color: var(--basic-black);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.text {
+  text-align: center;
+}
+
+.sedona {
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.blue-background {
+  background-color: var(--basic-midle-blue);
+}
+
+.advantages-sedona {
+  font-size: 21px;
+  line-height: 21px;
+}
+.feature-end{
+  background-color:var(--basic-grey);
+}
+.text-help{
+  font-size: 30px;
+  line-height: 24px;
+}
+.button{
+  background-color: var(--basic-brown);
+  font:inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+.visit{
+  color: #000000;
+}
+.main-footer{
+  margin: top -10px;
+  z-index: 1;
+}
+.twitter,
+.facebook,
+.youtube{
+background-color: var(--basic-midle-blue);
+}
