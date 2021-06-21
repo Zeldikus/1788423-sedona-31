@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона-Каталог</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="body-page">
@@ -16,20 +16,21 @@
       <img class="img" src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
     </a>
     <nav class="main-navigation">
-      <ul class="main-navigation-header">
-        <li>
-        <li><a class="navigation link" href="blank.html">Информация</a></li>
-        <li><a class="navigation link" href="blank.html">Фото и видео</a></li>
-        <li><a class="navigation link" href="blank.html">Карта штата</a></li>
-        <li><a class="navigation link" href="catalog.html">Гостиницы</a></li>
-      </ul>
+      <div class="main-header-bar">
+        <ul class="main-navigation-header">
+          <li><a class="navigation" href="blank.html">Информация</a></li>
+          <li><a class="navigation" href="blank.html">Фото и видео</a></li>
+          <li class="right"><a class="navigation" href="blank.html">Карта штата</a></li>
+          <li class="right"><a class="navigation" href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main class="container">
     <section class="filters">
-      <h2>Поиск Гостиницы</h2>
+      <h2 class="helper">Поиск Гостиницы</h2>
       <form method="GET" action="#">
-        <fieldset class="search">
+        <fieldset class="search search-grid">
           <legend class="chek">Инфраструктура:</legend>
           <label class="label-checkbox option">
             <input class="checkbox-input" type="checkbox" value="pool" checked>
@@ -47,7 +48,7 @@
             <span>Wi-Fi<span>
           </label>
         </fieldset>
-        <fieldset class="search">
+        <fieldset class="search search-grid-center">
           <legend class="chek">Тип жилья:</legend>
           <label class="label-checkbox option">
             <input class="checkbox-input" type="checkbox" value="hotel" checked>
@@ -65,7 +66,7 @@
             <span>Апартаменты</span>
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="search-grid-end">
           <legend class="chek">Стоимость в сутки, ₽:</legend>
           <span class="slider">от 0</span>
           <span class="slider">До 3000</span>
@@ -122,32 +123,32 @@
     <section class="footer-contacts">
       <h2>Как нас найти</h2>
       <div>
-        <a class="visit link" href="#"> #visitSEDONA</a>
-        <a class="visit link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+        <a class="visit" href="#"> #visitSEDONA</a>
+        <a class="visit" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
       </div>
     </section>
     <section class="footer-social">
       <h2>Давайте дружить!</h2>
       <ul class="features-list">
         <li class="twitter">
-          <img class="img" src="img/twitter.svg" alt="Иконка твитера">
+          <img src="img/twitter.svg" alt="Иконка твитера">
           <a class="link" href="#">Твитер</a>
         </li>
         <li class="facebook">
-          <img class="img" src="img/fb-icon.svg" alt="иконка фейсбука">
-          <a class="link" href="#">Фейсбук</a>
+          <img src="img/fb-icon.svg" alt="иконка фейсбука">
+          <a href="#">Фейсбук</a>
         </li>
         <li class="youtube">
           <img class="img" src="img/youtube.svg" alt="иконка ютуб">
-          <a class="link" href="#">YouTube</a>
+          <a href="#">YouTube</a>
         </li>
       </ul>
     </section>
     <p>
       Разработано:
-      <a class="creator link" href="https://htmlacademy.ru"> <img src="img/logo_htmlacademy.svg"></a>
+      <a class="creator" href="https://htmlacademy.ru"> <img src="img/logo_htmlacademy.svg"></a>
     </p>
-  </footer>
+</footer>
 </body>
 
 </html>
