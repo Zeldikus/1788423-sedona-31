@@ -37,9 +37,9 @@
 }
 
 body {
-  min-width: 1280px;
-  margin: 0px;
-  padding: 0px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -47,28 +47,24 @@ body {
   color: var(--basic-extra-dark);
   text-transform: uppercase;
   background-color: var(--basic-white);
-
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
-.img {
+img {
   max-width: 100%;
   height: auto;
 }
-.main-header{
-  margin-bottom: 70px;
+
+.main-header {
+  position: relative;
 }
-.logo-nav{
-  display: grid;
-  justify-self: center;
+
+.logo-nav {
   position: absolute;
+  left: calc(50% - 69px);
   top: 0;
   z-index: 2000;
 }
@@ -81,31 +77,40 @@ body {
   background-color: transparent;
 }
 
-/* GRID */
 .page {
-  height: 100%;
+  background-color: var(--basic-ultra-grey);
+  min-height: 100%;
 }
 
 .main-navigation-header {
   margin: 0;
-  padding: 0;
+  padding: 0 72px;
   list-style: none;
+  display: grid;
+  grid-template-columns: 228px 300px 300px 228px;
+
+}
+.right{
+  text-align: right;
 }
 .main-header-bar {
-  background-color:var(--basic-white);
+  background-color: var(--basic-white);
 }
-.main-navigation-wraper{
+
+.main-navigation-wraper {
   display: grid;
   grid-template-columns: 1fr;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
-.center{
+
+.center {
   width: 1240px;
   margin: 0 auto;
   padding: 0 10px;
 }
+
 .navigation {
   color: var(--basic-black);
 }
@@ -251,24 +256,24 @@ body {
   list-style: none;
 }
 
-.sorting-up .sorting-up-link:not([href]) {
+.sorting-up-link:not([href]) {
   background-color: var(--basic-black);
 }
 
-.sorting-up .sorting-up-link {
+.sorting-up-link {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
-.sorting-up .sorting-up-link:hover {
+.sorting-up-link:hover {
   color: var(--basic-midle-blue);
 }
 
-.sorting-up .sorting-up-link:focus {
+.sorting-up-link:focus {
   color: var(--basic-black);
 }
 
-.sorting-up .sorting-up-linka:active {
+.sorting-up-linka:active {
   color: var(--basic-midle-blue);
 }
 
