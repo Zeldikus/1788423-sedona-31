@@ -14,20 +14,26 @@
 <body class="body-page">
 
   <header class="main-header">
-    <a class="logo-nav" href="index.html">
-      <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
-    </a>
-    <nav class="main-navigation">
-      <ul class="main-navigation-header">
-        <li><a class="navigation" href="blank.html">Информация</a></li>
-        <li><a class="navigation" href="blank.html">Фото и видео</a></li>
-        <li><a class="navigation" href="blank.html">Карта штата</a></li>
-        <li><a class="navigation" href="catalog.html">Гостиницы</a></li>
-      </ul>
-    </nav>
+    <div class="container-center">
+      <a class="logo-nav link" href="index.html">
+        <img class="img" src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
+      </a>
+      <nav class="main-navigation">
+        <div class="main-navigation-wraper">
+          <div class="main-header-bar">
+            <ul class="main-navigation-header">
+              <li><a class="navigation link" href="blank.html">Информация</a></li>
+              <li><a class="navigation link" href="blank.html">Фото и видео</a></li>
+              <li><a class="navigation link" href="blank.html">Карта штата</a></li>
+              <li><a class="navigation link" href="catalog.html">Гостиницы</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="container">
-    <img class="greeting" src="img/Greeting.jpg" width="1200" height="509" alt="Приветствие на фоне гор">
+    <img class="greeting img" src="img/Greeting.jpg" width="1200" height="509" alt="Приветствие на фоне гор">
     <h1>Седона городок в Аризоне</h1>
     <section class="features">
       <h2 class="text sedona">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
@@ -38,22 +44,22 @@
             <h3 class="bdvantages-sedona">Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там
               течёт своя жизнь</p>
-            <img src="img/City.jpg" width="800" height="256" alt="Вход в ресторанчик">
+            <img class="img" src="img/City.jpg" width="800" height="256" alt="Вход в ресторанчик">
           </div>
           <ul class="features-list">
             <li class="features-item">
               <h4 class="Advantages-sedona">Жильё</h4>
-              <img src="img/house.svg" alt="Малньеий домик">
+              <img class="img" src="img/house.svg" alt="Малньеий домик">
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="features-item">
               <h4 class="Advantages-sedona">Еда</h4>
-              <img src="img/burger.svg" alt="Бургер">
+              <img class="img" src="img/burger.svg" alt="Бургер">
               <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
             <li class="features-item">
               <h4 class="Advantages-sedona">Сувениры</h4>
-              <img src="img/present.svg" alt="Коробка с бантом">
+              <img class="img" src="img/present.svg" alt="Коробка с бантом">
               <p>Не только китайского, но и местного производства!</p>
             </li>
           </ul>
@@ -64,7 +70,7 @@
             <p>Да, по нему можно пройти! Если конечно
               вы осмелитесь</p>
           </li>
-          <img src="img/Bridge.jpg" width="800" height="256" alt="Мост дьявола">
+          <img class="img" src="img/Bridge.jpg" width="800" height="256" alt="Мост дьявола">
         </div>
         <div class="feature-end">
           <li class="features-item">
@@ -86,38 +92,40 @@
       <h2 class="text text-help">Заинтересовались?</h2>
       <p class="text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button class="button" type="button">Поиск гостиниц в седоне</button>
-      <img src="img/map.png" width="1199" height="594" alt="Место на каре где мы находимся">
+      <img class="img" src="img/map.png" width="1199" height="594" alt="Место на каре где мы находимся">
     </section>
   </main>
   <footer class="main-footer">
-    <section class="footer-contacts">
-      <h2>Как нас найти</h2>
-      <div>
-        <a class="visit" href="#"> #visitSEDONA</a>
-        <a class="visit" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
-      </div>
-    </section>
-    <section class="footer-social">
-      <h2>Давайте дружить!</h2>
-      <ul class="features-list">
-        <li class="twitter">
-          <img src="img/twitter.svg" alt="Иконка твитера">
-          <a href="#">Твитер</a>
-        </li>
-        <li class="facebook">
-          <img src="img/fb-icon.svg" alt="иконка фейсбука">
-          <a href="#">Фейсбук</a>
-        </li>
-        <li class="youtube">
-          <img src="img/youtube.svg" alt="иконка ютуб">
-          <a href="#">YouTube</a>
-        </li>
-      </ul>
-    </section>
-    <p>
-      Разработано:
-      <a class="creator" href="https://htmlacademy.ru"> <img src="img/logo_htmlacademy.svg"></a>
-    </p>
+    <div class="center">
+      <section class="footer-contacts">
+        <h2>Как нас найти</h2>
+        <div>
+          <a class="visit link" href="#"> #visitSEDONA</a>
+          <a class="visit link" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+        </div>
+      </section>
+      <section class="footer-social">
+        <h2>Давайте дружить!</h2>
+        <ul class="features-list">
+          <li class="twitter">
+            <img class="img" src="img/twitter.svg" alt="Иконка твитера">
+            <a class="link" href="#">Твитер</a>
+          </li>
+          <li class="facebook">
+            <img class="img" src="img/fb-icon.svg" alt="иконка фейсбука">
+            <a href="#">Фейсбук</a>
+          </li>
+          <li class="youtube">
+            <img class="img" src="img/youtube.svg" alt="иконка ютуб">
+            <a class="link" href="#">YouTube</a>
+          </li>
+        </ul>
+      </section>
+      <p>
+        Разработано:
+        <a class="creator link" href="https://htmlacademy.ru"> <img src="img/logo_htmlacademy.svg"></a>
+      </p>
+    </div>
   </footer>
 </body>
 
