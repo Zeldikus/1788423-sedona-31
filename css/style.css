@@ -163,10 +163,25 @@ img {
 }
 
 .main-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   margin: top -10px;
   z-index: 1;
+  justify-content: space-between;
+}
+.footer-contacts{
+  margin-left: 153px;
+  margin-top: 23px;
+  margin-bottom: 36px;
+}
+
+.footer-social{
+  align-self: center;
+}
+
+.footer-html{
+  margin-right: 145px;
+  margin-top: 44px;
+  margin-bottom: 48px;
 }
 
 .twitter,
@@ -174,15 +189,13 @@ img {
 .youtube {
   background-color: var(--basic-midle-blue);
 }
-
 .blue-background {
   background-color: var(--basic-midle-blue);
 }
 
 .filters {
-  display: grid;
   width: 100%;
-  min-height: 217px;
+  height: 217px;
   margin-bottom: 30px;
   background-color: var(--basic-extra-blue);
   background-image: url(../img/background.jpg);
@@ -192,23 +205,22 @@ img {
   font-size: 14px;
   line-height: 21px;
   color: var(--basic-white);
-  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 29px;
 }
 
-.helper {
-  display: none;
+.form-filters {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 
-.search-grid {
-  justify-self: start;
+.search-grid{
+  margin-left: 72px;
 }
 
-.search-grid-center {
-  justify-self: center;
-}
-
-.search-grid-end {
-  justify-self: end;
+.search-grid-center{
+  margin-right: 586px;
 }
 
 .main-list {
@@ -221,11 +233,6 @@ img {
   display: grid;
 }
 
-/*.features-grid{
-  padding: 0;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}*/
 .chek {
   color: var(--basic-white);
   font-size: 16px;
@@ -237,6 +244,8 @@ img {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  border: 0;
+  outline: 0;
 }
 
 .label-checkbox {
