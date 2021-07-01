@@ -233,11 +233,64 @@ img {
 .search-grid-center {
   margin-right: 586px;
 }
-
+/* Main-index*/
 .main-list {
-  display: grid;
-  padding: 0;
-  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+    margin: 0 auto;
+    counter-reset: a;
+}
+
+.features-list {
+  counter-reset: b;
+}
+
+.features-list,
+.main-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+}
+
+.features-item--full {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.main-bg {
+  background-color: var(--basic-midle-blue);
+  color: var(--basic-white);
+  display: flex;
+}
+
+.main-bg--reverse {
+  flex-direction: row-reverse;
+}
+
+.content {
+  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.text {
+  text-align: center;
+}
+
+.counter::before {
+  content: '–\00A0 №' counter(a) '\00A0–';
+  counter-increment: a;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-item-gray {
+  background-color:var(--basic-grey);
 }
 
 .features {
@@ -379,7 +432,7 @@ img {
 
 .hotel-item {
   border-top: 1px solid var(--basic-grey-border);
-  padding: 30px 73px;
+  padding: 25px 75px 30px;;
 
   display: grid;
   grid-template-columns: 135px 1fr 110px;
@@ -435,6 +488,7 @@ img {
 .rating{
   margin:0;
   padding:0;
+  margin-top: -11.5px;
   background-color: var(--basic-ultra-grey);
   color: var(--basic-midle-grey);
   width: 110px;
@@ -446,38 +500,12 @@ img {
 /* Star */
 
 .stars{
-  position: relative;
-  width: 85px;
-  height: 17px;
-  background-image: url(../img/Shape.svg);
+  display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-left: 5px;
+    margin-bottom: 45px;
+    background-image: url(../img/Shape.svg);
 }
 
-.star-main{
-  margin: 0 0 6px 0;
-  padding: 0;
-  border: none;
-}
 
-.star-rating{
-  position: absolute;
-  width: 18px;
-  height: 17px;
-  top: 0;
-  left: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.star-rating:nth-of-type(1){
-  width: 18px;
-}
-.star-rating:nth-of-type(2){
-  width: 36px;
-}
-.star-rating:nth-of-type(3){
-  width: 54px;
-}
-.star-rating:nth-of-type(4){
-  width: 72px;
-}
